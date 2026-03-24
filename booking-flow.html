@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking Flow | Onyx Paws</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar bg-white shadow-sm sticky-top"><div class="container py-2"><a class="navbar-brand d-flex align-items-center gap-2" href="home.html"><span class="logo-badge">🐾</span><span class="brand fs-2 fw-bold text-dark">Onyx Paws</span></a><a id="bookingBackLink" class="fw-bold text-decoration-none text-secondary" href="service-detail.html"><i class="bi bi-arrow-left"></i> Back to Service</a></div></nav>
+<div class="bg-white border-bottom py-4"><div class="container"><div id="bookingSteps" class="d-flex flex-wrap gap-2"><span class="step-pill active">📋 Booking Form</span><span class="step-pill">🧾 Invoice Preview</span><span class="step-pill">✅ Confirmation</span></div></div></div>
+<section class="section-pad bg-cream pt-5"><div class="container" style="max-width:980px;"><div id="bookingMount"></div></div></section>
+
+<div class="modal fade" id="invoicePreviewModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content client-doc-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold text-white" id="invoicePreviewModalTitle">Invoice Preview</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe id="invoicePreviewFrame" src="about:blank" style="width:100%;min-height:78vh;border:0;display:block"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body></html>
